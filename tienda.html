@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tienda</title>
+</head>
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-secondary p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+           <span class="text-light fs-5 fw-bolder">Floreria PG</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html" style="color: black;">Tienda</a>
+              </li>
+            </ul>
+            <div class="nav-item p-3">
+                <a class="nav-link" href="login.html">Cuenta</a>
+            </div>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" aria-label="Search">
+              <button class="btn btn-light btn-outline-success" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+
+    
+    <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+
+    </nav>
+    <div class="carrito">
+      <div class="header-carrito">
+        <h2>Tu carrito</h2>
+      </div>
+      <div class="carrito-items">
+      </div>
+      <div class="carrito-total">
+        <div class="fila">
+          <strong>Tu total</strong>
+          <span class="carrito-precio-total"></span>
+        </div>
+        <button class="btn-pagar btn btn-secondary">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row row-cols-3">
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Flores Mixta - 12 Unidades</span>
+          <br>
+          <img src="img/PW-scaled-e1648688471394.jpg" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$9.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Rosas - 12 Unidades</span>
+          <br>
+          <img src="img/RAMO-DE-12-ROSAS-7.png" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$12.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Girasoles - 10 Unidades</span>
+          <br>
+          <img src="img/10-girasoles.png" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$15.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Tulipanes - 10 Unidades</span>
+          <br>
+          <img src="img/TUL10-1-scaled-600x900.jpg" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$13.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Girasoles - 20 Unidades</span>
+          <br>
+          <img src="img/ramo-de-20-girasoles.png" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$24.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Ramo de Tulipanes - 5 Unidades</span>
+          <br>
+          <img src="img/TULP-1-scaled-600x900.jpg" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$7.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+
+<script src="js/script.js"></script>
+<script src="js/mode.js"></script>
+<script src="js/carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+</body>
+</html>
